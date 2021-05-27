@@ -1,0 +1,125 @@
+/* Servir para zerar como medidas padrao do html */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Cabecalho do formulario*/
+#titulo {
+    font-family: monospace;
+    font-size: 30px;
+    color: #c6d8ff;
+    margin-left: 20%;
+    
+}
+
+#subtitulo {
+    font-family: monospace;
+    font-size: 15px;
+    color: #c6e8ff;
+    margin-left: 25%;
+    text-align: justify;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background: #cbf7f1; background: -moz-linear-gradient(to right,  #a3e9d4 0%,#a9f0e4f6 100%); background: -webkit-linear-gradient(to right,  #09403b 0%,#57f0cf 100%); background: linear-gradient(to right,  #094039 0%,#57f0ca 100%);
+    font-family: monospace;
+    font-size: 16px;
+    color: #bef8e9;
+    margin-left: 36%;
+    margin-top: 1%;
+    margin-right: 36%;
+    justify-content: center;
+    align-items: center;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.grupo::before, .grupo::after {
+    display: table;
+}
+
+.grupo::after {
+    display: both;
+}
+
+/* Espaco para digitar informacoes como nome, sobrenome, email e telefone*/
+.campo{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Espaco para escolher area de desenvolvimento e senioridade*/
+.campo label{
+    margin-bottom: 0.2em;
+    color: #c6f4ff;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+/* Indicacao de onde escrever as informacoes*/
+::placeholder {
+    color: #c6f4ff;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo select, .campo textarea, button {
+    padding: 0.1em;
+    margin-right: 0.2em;
+    border: 1px solid #aae7ff;
+    box-shadow: 2px 2px 2px rgba(2, 238, 255, 0.5);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+/*Quando clicar nas caixas para digitar ou selecionar, alterara a cor. */
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #cffdf5;
+}
+
+/* Configuracoes do botao */
+.botao{
+    background-image: linear-gradient(to right, #70f5fa 0%, #d6f1f0 100%);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: -50%;
+    border: 0;
+    padding: 0.2em 0.6em;
+    cursor: pointer;
+    color: #4eeaff;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px rgba(70, 228, 228, 0.7);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+.botao:hover{
+    background: #049aa5;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#check{
+    display: inline-block;
+}
